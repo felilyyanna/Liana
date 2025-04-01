@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <title>Personal Gallery</title>
+  <style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 80px 0 0; /* Prevents content from overlapping with fixed header */
+    background-image: url('https://img.freepik.com/free-vector/gradient-monochromatic-abstract-background_52683-74302.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: #FC8EAC;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: 'Concert One', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #DE5D83;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    background-color: #16a085;
+    transform: translateY(-3px);
+  }
+
+  #about, #gallery, #contact {
+    background: linear-gradient(135deg, #FFDEE9 0%, #B5FFFC 100%);
+    color: #333;
+    padding: 50px;
+    margin: 200px auto 60px;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+
+  h2 {
+    color: #DE5D83;
+    font-size: 2rem;
+  }
+
+  .gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .gallery-images img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #2c3e50;
+    color: #fff;
+    width: 100%;
+    margin-top: 50px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LIANA PERIDA</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#gallery">Photo Gallery</a></li>
+        <li><a href="#contact">Contact & Social Media</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi! I'm Liana Perida, a 16-year-old born on December 25, 2008. I have a wide range of interests that keep me entertained and busy. I love watching K-dramas and anime, immersing myself in different worlds through mangas and novels, and, of course, spending time gaming. Some of my favorite games include Call of Duty, Resident Evil, Genshin Impact, Mobile Legends, Honkai: Star Rail, Left 4 Dead 2, Counter-Strike, and Valorant. While I enjoy gaming, I also do my best to balance it with my student responsibilities—though, if I’m being honest, procrastination is my best friend, and cramming comes in as a close second.</p>
+    <p>Beyond my digital hobbies, I enjoy spending quality time with my family. My day usually ends with me and my parents watching a movie together, as it’s the only bonding time we get. I also love animals, but unfortunately, I can’t have pets because of my asthma.</p>
+    <p>Aside from that, I’m an active member of the scouting movement as a Rover Scout, just like my two older brothers. Scouting has been a huge part of my life, teaching me values like leadership, camaraderie, and service. Thanks to scouting and our supportive parents, we’ve had the opportunity to travel to different places in and out of the country, meet scouts from other nations, interact with soldiers from the Armed Forces of the Philippines, connect with medical respondent teams from all over the country, and even encounter government officials, politicians, and the President of the Philippines. But beyond the places we've been to and the people we've met, scouting has given me a second family—a brotherhood bound by adventure, service, and lifelong friendships.</p>
+    <p>At the end of the day, I’m just someone who’s figuring things out, one quest at a time. Life may not come with a walkthrough, but as long as I have my family, friends, and a good internet connection, I think I’ll be just fine.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery-images">
+      <img src="IMG_2027.JPG" alt="Kaleidoscope party with my friends" loading="lazy">
+      <img src="rcu.jpg" alt="Rovers at Luneta during Rizal Day" loading="lazy">
+      <img src="fam.jpg" alt="Annual family portrait" loading="lazy">
+      <img src="senior.jpg" alt="When I was a senior scout" loading="lazy">
+      <img src="hiking.JPG" alt="Hiking with the AFP" loading="lazy">
+      <img src="rover.jpg" alt="At Luneta during Rizal Day" loading="lazy">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Social Media</h2>
+    <p>Let's be friends!</p>
+    <p>Email: <a href="mailto:lianaerinperida@goodsam.edu.ph">lianaerinperida@goodsam.edu.ph</a></p>
+    <p>Facebook: <a href="https://www.facebook.com/FuyumiiTodoroki" target="_blank">Liana Perida</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/felilyyanna" target="_blank">@felilyyanna</a></p>
+  </section>
+</body>
+</html>
